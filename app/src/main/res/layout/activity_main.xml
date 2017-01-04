@@ -18,7 +18,8 @@
         android:backgroundTint="#2ca5f5"
         android:background="@drawable/rounded_corners"
         android:layout_weight="1"
-        android:layout_marginBottom="5dp">
+        android:layout_marginBottom="5dp"
+        android:id="@+id/weightBtn">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -84,15 +85,8 @@
         android:layout_height="match_parent"
         android:backgroundTint="#916bcd"
         android:background="@drawable/rounded_corners"
-        android:layout_weight="1">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/lotus"/>
+        android:layout_weight="1"
+        android:id="@+id/yogaBtn">
 
         <TextView
             android:text="Yoga"
@@ -142,6 +136,14 @@
             android:padding="5dp"
             android:background="@drawable/rounded_corners"
             android:backgroundTint="#20000000"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/lotus"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -150,7 +152,8 @@
         android:backgroundTint="#52ad56"
         android:background="@drawable/rounded_corners"
         android:layout_weight="1"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:id="@+id/cardioBtn">
 
         <ImageView
             android:layout_width="wrap_content"
