@@ -32,8 +32,9 @@ public class DetailActivity extends AppCompatActivity {
         } else if (exerciseTitle.equalsIgnoreCase(MainActivity.EXERCISE_YOGA)) {
             exerciseImg.setImageDrawable(getResources().getDrawable(R.drawable.lotus, getApplicationContext().getTheme()));
             mainBG.setBackgroundColor(Color.parseColor("#916bcd"));
-        } else
+        } else {
             exerciseImg.setImageDrawable(getResources().getDrawable(R.drawable.heart, getApplicationContext().getTheme()));
             mainBG.setBackgroundColor(Color.parseColor("#52ad56"));
+        }
     }
 }
