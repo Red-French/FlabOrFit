@@ -45,8 +45,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadDetailActivity(String exerciseTitle) {
-        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+        Intent intent = new Intent(MainActivity.this, DetailActivity.class);  // The first parameter tells which activity (MainActivity) is
+                                                                              // loading the new activity (DetailActivity).
         intent.putExtra(MainActivity.EXTRA_ITEM_TITLE, exerciseTitle);  // EXTRA_ITEM_TITLE is the key name to look it up, and exerciseTitle is the value
-        startActivity(intent);
+        startActivity(intent);  // gets sent to operating system (activity manager) which decides how to start the activity
     }
 }
+        // An ‘Intent' is a messenger that can send data or messages to the operating system.
+        // You can send data or a message and say, “hey, I have the intent to do this."
